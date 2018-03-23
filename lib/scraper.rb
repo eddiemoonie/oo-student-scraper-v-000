@@ -23,6 +23,12 @@ class Scraper
     profile_links.each do |link|
       if link.include?("twitter")
         student[:twitter] = link
+      elsif link.include?("linkedin")
+        student[:linkedin] = link
+      elsif link.include?("github")
+        student[:github] = link
+      else
+        student[:other] = link
   end
 
 end
