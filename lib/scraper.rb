@@ -14,6 +14,7 @@ class Scraper
         students << {name: student_name, location: student_location, profile_url: student_prof_link}
       end
     end
+    students
   end
 
   def self.scrape_profile_page(profile_url)
